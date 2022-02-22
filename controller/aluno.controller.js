@@ -1,4 +1,4 @@
-const pool = require('../config/pg.config')
+const { pool } = require('../config/pg.config')
 
 const getAlunos = (req, res) => {
     pool.query('SELECT * FROM alunos', (err, result) => {
